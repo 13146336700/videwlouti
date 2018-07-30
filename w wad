@@ -1,0 +1,24 @@
+[33mcommit f3e3f54d3a96f938fb0fcba58b932e07bff15ffe[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Merge: 3bee96f d75c31f
+Author: 571337259@qq.com <571337259@qq.com>
+Date:   Mon Jul 30 16:07:03 2018 +0800
+
+    ok
+
+[33mcommit 3bee96fc107dbcc9a7d1ae7e2ff63a73698527e8[m
+Author: 571337259@qq.com <571337259@qq.com>
+Date:   Mon Jul 30 15:53:10 2018 +0800
+
+    主分支提交
+
+[33mcommit d75c31f5288c600ef396e8f034aa6bd6f3512291[m[33m ([m[1;32mdea[m[33m)[m
+Author: 571337259@qq.com <571337259@qq.com>
+Date:   Mon Jul 30 15:49:59 2018 +0800
+
+    我是分支上修改的
+
+[33mcommit 45a68083aded96794cde43a21a62c28d12430ab2[m
+Author: 571337259@qq.com <571337259@qq.com>
+Date:   Mon Jul 30 15:48:40 2018 +0800
+
+    第一次提交的
