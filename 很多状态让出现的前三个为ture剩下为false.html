@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+	</body>
+	<script>
+		       let data=[
+       	{name:"小明",status:true},
+       	{name:"小红",status:false},
+       	{name:"小张",status:true},
+       	{name:"小墙",status:false},
+       	{name:"小粉",status:false},
+       	{name:"小军",status:false},
+       	{name:"小钰",status:false},
+       	{name:"小访",status:true},
+       	{name:"小源",status:false},
+       	{name:"小方式",status:false},
+       	{name:"小佛",status:true},
+       	{name:"小付款",status:true},
+       	{name:"小哦咯",status:true},
+       	{name:"小来了",status:false},
+       ]
+		       
+		       //方法一
+		            let count = 0;
+        data.forEach(obj => {
+            if (count >= 3) {
+                obj.status = false;
+                return;
+            }
+            if (obj.status) {
+                count++;
+            }
+        })
+        console.log(data);
+        //方法二
+        //			let count = 0;
+//			for(let item of data){
+//			    if(count < 3){
+//			        item.status && ++count
+//			    }else{
+//			        item.status = false;
+//			    }
+//			}
+//    			console.log(data);
+	</script>
+</html>
