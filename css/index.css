@@ -1,0 +1,36 @@
+			@font-face { 
+			  font-family: SketchRockwell; 
+			  src: url('../iponeSize/last.ttf');       /*字体源文件*/
+			} 
+			*{
+				padding: 0;
+				margin: 0;
+				list-style: none;
+			}
+			.aboutUshome{
+					 font-family: SketchRockwell; 
+				width: 90%;
+				margin: 100px auto;
+				display: flex;
+				/*margin-left: 100px;*/
+			}
+			.aboutUshome .div_left{
+				width: 30%;
+			}
+			.aboutUshome .div_left img{
+				width: 100%;
+			}
+			
+			.aboutUshome .div_right{
+				line-height: 50px;
+				width: 52%;
+			}
+			.aboutUshome .div_right .gongsi{
+				font-size: 30px;
+			}
+			.aboutUshome .div_right .gongsibottom{
+				font-size: 22px;
+			}
+			.aboutUshome .div_right .div_right_center{
+				font-size: 15px;
+			}

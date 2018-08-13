@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>视频swiper轮播效果</title>
+		<link rel="stylesheet" type="text/css" href="css/index2.css"/>
+		<link rel="stylesheet" type="text/css" href="css/swiper-4.3.3.min.css"/>
+	</head>
+	<body>
+
+<div class="swiper-container" id="swiper2">
+					<div class="swiper-wrapper">
+						    <div class="swiper-slide">
+							<video id="video1" src="${video.video_url}" title="${video.video_title}" style="width: 680px; height: 340px; background: #e1e1e1; cursor: pointer;"> 您的浏览器不支持 video 标签。
+							</video>
+						    </div>
+ 
+					</div>
+					<!-- 如果需要分页器 -->
+					<div class="swiper-pagination"></div>
+				</div>
+	</body>
+	<script src="jquery.3.1.1.js"></script>
+	<script src="swiper-4.3.3.min.js"></script>
+	<script>
+var mySwiper2 = new Swiper('#swiper2', {
+			loop : true,
+			speed : 2000,
+			autoplay : {
+				delay : 5000,
+				stopOnLastSlide : false,
+				disableOnInteraction : true,
+			},
+			pagination : '.swiper-pagination'
+		})
+ 
+		mySwiper2.el.onmouseover = function() { //鼠标进入
+			mySwiper2.autoplay.stop();  //轮播停止
+		}
+		mySwiper2.el.onmouseout = function() { //鼠标离开
+			var v_len = $("#swiper2 .swiper-slide").find("video").length
+           	    for(var i = 0;i<v_len;i++){
+           	      $("#swiper2 .swiper-slide").find("video").get(i).pause(); //把所有停止
+         	    }
+			mySwiper2.autoplay.start(); //轮播开始
+		}
+ 
+		$("#swiper2 .swiper-slide video").on("click", function() {
+			var isPaused = $(this).get(0).paused  //视频是否在播放
+			if(isPaused){ // 我点击的这个是暂停的
+				$(this).get(0).play(); //播放
+			}else{
+				$(this).get(0).pause(); //停止
+			}
+		});
+	</script>
+</html>

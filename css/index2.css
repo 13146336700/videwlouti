@@ -1,0 +1,42 @@
+/*视频样式*/
+/*小屏手机*/
+.media-poll{padding:0 18px 26px;position: relative;background:#fff;margin:-3px 0 8px;}
+.media-poll .swiper-video video{width: 100%; position: relative;height: 159px;}
+.media-poll .swiper-video{position: relative;overflow: hidden;}
+.media-poll #swiper-wrapper{position: relative;}
+.media-poll .posterBg{background-size: 100% 100%;width: 100%;height: 159px;z-index: 8;position: absolute;text-align: center;line-height:160px;}
+.media-poll .swiper-video .posterBg .starticon{width: 44px;height: auto;}
+.media-poll .swiper-pagination{width: auto;right:14px;margin-top:3px;}
+.media-poll .sping-daodu{padding:13px 0 4px;font-size: 14px;color: #323232;}
+.media-poll .swiper-slide .video-description{font-size: 12px;color: #a3a3a3;padding-bottom:6px;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
+.media-poll .swiper-pagination .swiper-pagination-bullet{margin-left:1px;}
+.media-poll .swiper-pagination .swiper-pagination-bullet-active{background: #6ac7c9;}
+.media-poll .topLogo{position: absolute;width: 100%;z-index:99;top:0px;height: 31px;background-image: -webkit-gradient(linear,top,bottom, from(rgba(0,0,0,0.8)), to(rgba(0,0,0,0)));background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.8),rgba(0,0,0,0));}
+.media-poll .topLogo img{position: relative;float: right;width: 43px;margin: 7px 14px 0px 7px;}
+.media-poll .video-bg{position: relative;height:159px}
+/*中屏手机*/
+@media (min-width:321px) and (max-width:375px){
+  .media-poll{padding:0 21px 30px;margin:-3px 0 9px}
+  .media-poll .swiper-video video{width: 100%; height: 186px}
+  .media-poll .posterBg{height: 186px;z-index: 8;line-height:188px}
+  .media-poll .swiper-pagination{width: auto;right:16px;margin-top:3px}
+  .media-poll .sping-daodu{padding:15px 0 5px;font-size: 16px;}
+  .media-poll .swiper-slide .video-description{font-size: 14px;padding-bottom:7px}
+  .media-poll .swiper-pagination .swiper-pagination-bullet{margin-left:1px;}
+  .media-poll .topLogo{position: absolute;width: 100%;height: 36px;top:0px;background-image: -webkit-gradient(linear,top,bottom, from(rgba(0,0,0,0.8)), to(rgba(0,0,0,0)));background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.8),rgba(0,0,0,0));}
+  .media-poll .topLogo img{width: 50px;margin: 8px 17px 0px 8px;}
+  .media-poll .video-bg{height:186px}
+}
+/*大屏手机*/
+@media (min-width:376px) and (max-width:1080px){
+  .media-poll{padding:0 23px 33px;margin:-3px 0 10px}
+  .media-poll .swiper-video video{width: 100%;height: 205px}
+  .media-poll .posterBg{background-size: 100% 100%;width: 100%;height: 205px;z-index: 8;line-height:208px}
+  .media-poll .swiper-pagination{width: auto;right:18px;margin-top:3px}
+  .media-poll .sping-daodu{padding:17px 0 5px;font-size: 18px;}
+  .media-poll .swiper-slide .video-description{font-size: 15px;padding-bottom:8px;}
+  .media-poll .swiper-pagination .swiper-pagination-bullet{margin-left:1px;}
+  .media-poll .topLogo{position: absolute;width: 100%;height: 40px;top:0px;background-image: -webkit-gradient(linear,top,bottom, from(rgba(0,0,0,0.8)), to(rgba(0,0,0,0)));background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.8),rgba(0,0,0,0));}
+  .media-poll .topLogo img{width: 55px;margin: 9px 19px 0px 9px;}
+  .media-poll .video-bg{height:205px}
+}
